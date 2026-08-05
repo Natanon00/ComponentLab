@@ -15,3 +15,6 @@ export interface Student {
     surname: string
     gpa: number
 }
+export interface MessageState {
+    message: string
+}
