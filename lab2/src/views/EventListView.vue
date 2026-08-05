@@ -82,6 +82,7 @@ Next Page &#62;</RouterLink>
 .pagination {
   display: flex;
   width: 290px;
+  margin: 2rem auto 0;
 }
 .pagination a {
   flex: 1;
