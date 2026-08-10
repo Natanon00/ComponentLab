@@ -6,23 +6,8 @@ defineProps<{
 }>()
 </script>
 <template>
-<div class="event-meta">
-  <p class="meta-text">{{ event.category }}</p>
-  <p class="meta-text">{{ event.organizer }}</p>
+<div class="flex flex-col items-end w-[250px]">
+  <p class="text-sm text-right my-[2px]">{{ event.category }}</p>
+  <p class="text-sm text-right my-[2px]">{{ event.organizer }}</p>
 </div>
 </template>
-
-<style scoped>
-.event-meta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 250px;
-}
-
-.meta-text {
-  font-size: 14px;
-  text-align: right;
-  margin: 2px 0;
-}
-</style>
