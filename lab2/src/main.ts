@@ -4,6 +4,8 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
+import { inject } from '@vercel/analytics'
+inject()
 import router from './router'
 import 'nprogress/nprogress.css'
 
