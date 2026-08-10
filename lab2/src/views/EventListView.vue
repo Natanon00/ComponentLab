@@ -40,14 +40,8 @@ onMounted(() => {
 <template>
 <h1>Event For Good</h1>
 
-<div class="page-size">
-  Events per page:
-  <RouterLink :to="{ name: 'event-list-view', query: { page: 1, size: 2 } }">2</RouterLink>
-  <RouterLink :to="{ name: 'event-list-view', query: { page: 1, size: 5 } }">5</RouterLink>
-  <RouterLink :to="{ name: 'event-list-view', query: { page: 1, size: 10 } }">10</RouterLink>
-</div>
+<div class="flex flex-col items-center">
 
-<div class="events">
   <div class="event-row" v-for="event in events" :key="event.id">
       <EventCard :event="event" />
       <EventMeta :event="event" />
@@ -73,11 +67,6 @@ Next Page &#62;</RouterLink>
 </template>
 
 <style scoped>
-.events {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .pagination {
   display: flex;
   width: 290px;
@@ -94,11 +83,5 @@ Next Page &#62;</RouterLink>
 #page-next {
   text-align: right;
 }
-.page-size {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.page-size a {
-  margin: 0 4px;
-}
+
 </style>
