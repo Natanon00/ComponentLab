@@ -7,7 +7,7 @@ const { message } = storeToRefs(store)
 </script>
 
 <template>
-  <div id="text-center font-sans text-gray-700 antialiased">
+  <div class="text-center font-sans text-gray-700 antialiased">
     <header>
       <div id="flashMessage" v-if="message">
         <h4>{{ message }}</h4>
